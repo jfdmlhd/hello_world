@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<SCRIPT language="javascript">
+
+function GotoTop(form) { //
+
+var formindex=form.thislocation.selectedIndex;
+window.top.location=form.thislocation.options[formindex].value;
+
+}
+
+function GotoPage(form) { //
+
+var formindex=form.thislocation.selectedIndex;
+window.location=form.thislocation.options[formindex].value;
+form.thislocation.selectedIndex = 0;
+}
+
+// End Script --></SCRIPT>
+<HEAD>
+   <TITLE>Jim's Page</TITLE>
+</HEAD>
+<body background="images/background/bumpy.jpg">
+<!--mstheme--><font face="trebuchet ms, arial, helvetica"><!--mstheme--></font><div align="left">
+<Center>
+<h1>Jim's Page</h1>
+<Table border="20" width="600" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<FORM>
+<center>
+<H2>Weather</H2>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="">Weather Links
+<option value="http://www.weather.com">Weather Channel
+<option value="http://iwin.nws.noaa.gov/iwin/iwdspg1.html">NWS
+<option value="http://www.booneweather.com/">Boone Weather
+<option value="http://www.intellicast.com/IcastPage/LoadPage.aspx?loc=kavl&seg=LocalWeather&prodgrp=RadarImagery&product=RadarLoop&prodnav=none">SE Radar Anim
+<option value="http://cirrus.sprl.umich.edu/wxnet/">WeatherNet
+</select>
+</Center>
+</form>
+<Form>
+<Center>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="jim.htm">My Weather Links
+<option value="weather.htm">My Weather Page
+<option value="nam.htm">NAM
+<option value="gfs.htm">GFS
+<option value="eta.htm">ETA
+<option value="avn.htm">AVN
+</select>
+</center>
+</form>
+</td>
+<td>
+<FORM>
+<Center>
+<H2>Sports</H2>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="">Sports Links
+<option value="http://forums.scout.com/mb.aspx?s=178&f=2515">New Wolfpack Forum
+<option value="http://www.herald-sun.com/sports/">Durham Herald-Sun
+<option value="http://www.newsobserver.com/sports/">Raleigh N&O
+<option value="http://www.charlotteobserver.com/sports/">Charlotte Observer
+<option value="http://www.theacc.com">The ACC
+<option value="http://www.gopack.com">GoPack.Com
+<option value="http://northcarolinastate.scout.com/">StateFans.com
+<option value="http://www.si.com/">Sports Illustrated
+<option value="http://sports.yahoo.com">Yahoo Sports
+</select>
+</Center>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<FORM>
+<Center>
+<H2>Movies</H2>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="">Movie Links
+<option value="http://www.hsx.com/portfolio/">HSX
+<option value="http://www.rottentomatoes.com">Rotten Tomatoes
+<option value="http://www.imdb.com">IMDB
+</select>
+</Center>
+</form>
+</td>
+
+<td>
+<FORM>
+<Center>
+<H2>News</H2>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="">News Links
+<option value="http://www.cnn.com">CNN
+<option value="http://www.newsobserver.com">Raleigh N&O
+<option value="http://www.charlotteobserver.com/">Charlotte Observer
+<option value="http://www.hickoryrecord.com">Hickory Record
+</select>
+</Center>
+</form>
+</td>
+
+</tr>
+
+<tr>
+<td>
+<FORM>
+<Center>
+<H2>Search</H2>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="">Search Links
+<option value="http://www.yahoo.com/">Yahoo
+<option value="http://www.mapquest.com">MapQuest
+<option value="http://www.amazon.com">Amazon
+<option value="http://www.switchboard.com">Switchboard
+<option value="http://www.m-w.com/dictionary.htm">Websters
+<option value="http://www.union.lib.nc.us/">Union County Public Library
+</select>
+</Center>
+</form>
+</td>
+
+<td>
+<FORM>
+<Center>
+<H2>Other</H2>
+<SELECT name="thislocation" onchange="GotoTop(this.form)" size=1>
+<option value="">Other Links
+<option value="http://www.goodeatsfanpage.com/GEFP/index.htm">Good Eats Fan Page
+<option value="http://www.irtc.org/">Ray Tracing
+<option value="http://www.asheboro.com/users/jtdavis/">Dad's Site
+<option value="http://www.eurekalert.org/news.pub.html">Eureka Alert
+<option value="http://www.gameknot.com/">Game Knot
+<option value="recipes.htm">Recipes
+<option value="http://mail.yahoo.com/">Yahoo Mail
+</select>
+</Center>
+</form>
+</td>
+
+</tr>
+</table>
+
+</Center>
+
+</BODY>
+</HTML>
