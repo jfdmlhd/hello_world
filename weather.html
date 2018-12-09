@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<script language="JavaScript">
+<!--
+
+if (document.images) {
+
+map1 = new Image();
+map1.src = "http://maps.weather.com/images/maps/forecast/trend7_277x187.jpg";
+
+map2 = new Image();
+map2.src = "http://maps.weather.com/images/maps/forecast/fore1_277x187.jpg";
+
+map3 = new Image();
+map3.src = "http://maps.weather.com/images/maps/forecast/fore2_277x187.jpg";
+
+map4 = new Image();
+map4.src = "http://maps.weather.com/images/maps/forecast/fore3_277x187.jpg";
+
+map5 = new Image();
+map5.src = "http://maps.weather.com/images/maps/forecast/fore4_277x187.jpg";
+
+map6 = new Image();
+map6.src = "http://maps.weather.com/images/maps/forecast/fore5_277x187.jpg";
+
+map7 = new Image();
+map7.src = "http://maps.weather.com/images/maps/forecast/trend6_277x187.jpg";
+
+tom1 = new Image();
+tom1.src = "http://maps.weather.com/images/maps/forecast/midfcst_277x187.jpg";
+
+tom2 = new Image();
+tom2.src = "http://maps.weather.com/images/maps/forecast/pmfcst_277x187.jpg";
+
+tom3 = new Image();
+tom3.src = "http://maps.weather.com/images/maps/forecast/amfcst_277x187.jpg";
+}
+
+
+function timeimgs(numb) {  // Reusable timer
+thetimer = setTimeout("imgturn('" +numb+ "')", 3000);
+}
+
+
+function imgturn(numb) {   // Reusable image turner
+	if (document.images) {
+
+		if (numb == "7") {         // This will loop the image
+			document["Week"].src = eval("map7.src");
+			timeimgs('1');
+			}
+
+		else {
+			document["Week"].src = eval("map" + numb + ".src");
+			timeimgs(numb = ++numb);
+			}
+		}
+	}
+
+
+function timeimgs3(numb3) {  // Reusable timer
+thetimer3 = setTimeout("imgturn3('" +numb3+ "')", 5000);
+}
+
+
+function imgturn3(numb3) {   // Reusable image turner
+	if (document.images) {
+		if (numb3 == "3") {         // This will loop the image
+			document["tomorrow"].src = eval("tom3.src");
+			timeimgs3('1');
+			}
+		else {
+			document["tomorrow"].src = eval("tom" + numb3 + ".src");
+			timeimgs3(numb3 = ++numb3);
+			}
+		}
+	}
+
+// -->
+</script>
+
+   <TITLE>Weather Links</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/background/weather.jpg" text="0000aa" onload="timeimgs('2');timeimgs3('2');">
+
+
+<META HTTP-EQUIV="Refresh" CONTENT=500>
+
+<center>
+<table>
+<tr>
+<td>
+<Center>
+<A HRef="http://weather.weatherbug.com/VA/Fairfax-weather/weather-cams/local-cams.html?zcode=z6286&camera_id=FRFNC" Target="_top"><img src="http://wwc.instacam.com/instacamimg/FRFNC/FRFNC_l.jpg" name="Fairfax, va" height=250 NaturalSizeFlag=1></A><br>
+<font size=-2>
+Weather Cam from Fairfax, Va<br>
+<font size=+2>
+</Center>
+</td>
+<td>
+<center>
+<A HRef="http://weather.weatherbug.com/UT/Sandy-weather/weather-cams/local-cams.html?zcode=z6286&camera_id=SNDY1" Target="_top"><img src="http://wwc.instacam.com/instacamimg/SNDY1/SNDY1_l.jpg" height=250 NaturalSizeFlag=1></A><br>
+<font size=-2>
+Weather Cam from Sandy, UT<br>
+<font size=+2>
+</center>
+</td>
+<td>
+<Center>
+<A HRef="http://weather.weatherbug.com/NC/Charlotte-weather/weather-cams/local-cams.html?zcode=z6286&camera_id=CHRPV" Target="_top"><img src="http://wwc.instacam.com/instacamimg/CHRPV/CHRPV_l.jpg" height=250 NaturalSizeFlag=1></A><br>
+<font size=-2>
+Weather Cam from Charlotte, NC<br>
+<font size=+2>
+</Center>
+</td>
+</tr>
+<tr>
+<td>
+<Center>
+<a href="http://www.wunderground.com/US/VA/Fairfax.html?bannertypeclick=infobox">
+<img src="http://banners.wunderground.com/weathersticker/infobox/language/www/US/VA/Fairfax.gif" border=0
+alt="Click for Fairfax, Virginia Forecast" height=108 width=144></a>
+
+
+</Center>
+</td>
+
+<td>
+<Center>
+<a href="http://www.wunderground.com/US/UT/Cottonwood_Heights.html?bannertypeclick=infobox">
+<img src="http://banners.wunderground.com/weathersticker/infobox/language/www/US/UT/Cottonwood_Heights.gif" border=0
+alt="Click for Cottonwood Heights, Utah Forecast" height=108 width=144></a>
+</Center>
+</td>
+
+
+<td>
+<Center>
+<a href="http://www.wunderground.com/US/NC/Weddington.html?bannertypeclick=infobox">
+<img src="http://banners.wunderground.com/weathersticker/infobox/language/www/US/NC/Weddington.gif" border=0
+alt="Click for Weddington, North Carolina Forecast" height=108 width=144></a>
+</Center>
+</td>
+</tr>
+<tr>
+<td>
+<Center>
+<A HREF="http://www.intellicast.com/IcastPage/LoadPage.aspx?loc=kavl&seg=LocalWeather&prodgrp=RadarImagery&product=RadarLoop&prodnav=none" Target="_top"><img src="http://images.intellicast.com/WxImages/Radar/clt.gif" height=250 NaturalSizeFlag=1></a><br>
+<font size=-2>Radar from Intellicast</font>
+</Center>
+</td>
+<td>
+<Center>
+<A HREF="http://www.weather.com/newscenter/fcstsummary.html" Target="_top"><img src="http://maps.weather.com/images/maps/forecast/midfcst_277x187.jpg" name="tomorrow"></a><br>
+<Font Size=-2>24 Hour forecast from the Weather Channel</Font>
+</Center>
+</td>
+<td>
+<Center>
+<A HRef="http://www.weather.com/maps/maptype/weeklyplannerusnational/index_large.html" Target="_top"><img src="http://maps.weather.com/images/maps/forecast/trend7_277x187.jpg" name="Week"></a><br>
+<Font Size=-2>7 Day Outlook from Weather Channel</Font>
+</Center>
+</td>
+</tr>
+<tr>
+<td>
+<Center>
+<a href="http://www.wunderground.com/US/NC/Fayetteville.html?bannertypeclick=infobox">
+<img src="http://banners.wunderground.com/weathersticker/infobox/language/www/US/NC/Fayetteville.gif" border=0
+alt="Click for El Paso, Texas Forecast" height=108 width=144></a></td>
+</center>
+<td>
+<Center>
+<a href="http://www.wunderground.com/US/WA/Olympia.html?bannertypeclick=infobox">
+<img src="http://banners.wunderground.com/weathersticker/infobox/language/www/US/WA/Olympia.gif" border=0
+alt="Click for Olypmia, Washington Forecast" height=108 width=144></a>
+</center>
+</td>
+<td>
+<Center>
+<a href="http://www.wunderground.com/US/NC/Asheboro.html?bannertypeclick=infobox">
+<img src="http://banners.wunderground.com/weathersticker/infobox/language/www/US/NC/Asheboro.gif" border=0
+alt="Click for Asheboro, North Carolina Forecast" height=108 width=144></a>
+</center>
+</td>
+</tr>
+</table>
+</BODY>
+</HTML>
