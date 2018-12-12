@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+        <title>AVN Model</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+<!--
+if (document.images) {     // Preloaded images
+img1 = new Image();
+img1.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h06.gif";
+
+img2 = new Image();
+img2.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h12.gif";
+
+img3 = new Image();
+img3.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h18.gif";
+
+img4 = new Image();
+img4.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h24.gif";
+
+img5 = new Image();
+img5.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h30.gif";
+
+img6 = new Image();
+img6.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h36.gif";
+
+img7 = new Image();
+img7.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h42.gif";
+
+img8 = new Image();
+img8.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h48.gif";
+
+img9 = new Image();
+img9.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h54.gif";
+
+img10 = new Image();
+img10.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h60.gif";
+
+img11 = new Image();
+img11.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h66.gif";
+
+img12 = new Image();
+img12.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h72.gif";
+
+img13 = new Image();
+img13.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h78.gif";
+
+img14 = new Image();
+img14.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h84.gif";
+
+img15 = new Image();
+img15.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h90.gif";
+
+img16 = new Image();
+img16.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h96.gif";
+
+img17 = new Image();
+img17.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h102.gif";
+
+img18 = new Image();
+img18.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h108.gif";
+
+img19 = new Image();
+img19.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h114.gif";
+
+img20 = new Image();
+img20.src = "http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h120.gif";
+
+}
+
+function timeimgs2(numb2) {  // Reusable timer
+if (numb2 == "1") {
+thetimer2 = setTimeout("imgturn2('" +numb2+ "')",2000);
+}
+else {
+thetimer2 = setTimeout("imgturn2('" +numb2+ "')", 500);
+}
+}
+
+function imgturn2(numb2) {   // Reusable image turner
+if (document.images) {
+
+if (numb2 == "20") {         // This will loop the image
+document["avn"].src = eval("img20.src");
+timeimgs2('1');
+}
+
+else {
+document["avn"].src = eval("img" + numb2 + ".src");
+
+timeimgs2(numb2 = ++numb2);
+}
+}
+}
+
+// -->
+</script>
+
+  </head>
+<body onload="timeimgs2('2');">
+
+<div align="center">
+<img src="http://www.aos.wisc.edu/weatherdata/avn_tempest/00UTC/avn_cpres_h06.gif" name="avn">
+</div>
+
+</body>
+</html>
